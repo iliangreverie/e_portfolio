@@ -1,0 +1,523 @@
+/* ==================================================
+   VARIABLES
+================================================== */
+
+:root{
+    --green:#3f6522;
+    --light-green:#8cc63f;
+    --background:#f3f3f3;
+}
+
+/* ==================================================
+   RESET
+================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    overflow-x:hidden;
+}
+
+body{
+    background:var(--background);
+    font-family:'Inter',sans-serif;
+    color:var(--green);
+    overflow-x:hidden;
+}
+
+/* ==================================================
+   MENU
+================================================== */
+
+nav{
+    display:flex;
+    width:100%;
+    background:white;
+    border-bottom:2px solid var(--green);
+}
+
+nav a{
+    flex:1;
+
+    min-height:80px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+
+    text-decoration:none;
+    text-align:center;
+
+    color:var(--green);
+
+    border-right:1px solid var(--green);
+
+    transition:0.25s;
+
+    padding:10px;
+
+    font-size:18px;
+}
+
+nav a:last-child{
+    border-right:none;
+}
+
+nav a.active{
+    background:var(--green);
+    color:white;
+}
+
+/* L'actif devient blanc seulement si un AUTRE bouton est survolé */
+nav:hover a.active:not(:hover){
+    background:white;
+    color:var(--green);
+}
+
+/* Bouton survolé */
+nav a:hover{
+    background:var(--green);
+    color:white;
+}
+
+.menu-icon{
+    
+
+    width:35px;
+    min-width:40px;
+
+    height:32px;
+
+    background:white;
+
+    border-radius:5px;
+
+    object-fit:contain;
+
+
+}
+
+.logo-menu-placeholder{
+        width:40px;
+    min-width:40px;
+
+    height:40px;
+
+    background:white;
+
+    border-radius:5px;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    flex-shrink:0;
+    
+}
+
+/* ==================================================
+   CONTENEUR PRINCIPAL
+================================================== */
+
+.container{
+    width:95%;
+    max-width:1700px;
+    margin:auto;
+    padding:35px 20px;
+}
+
+/* ==================================================
+   LAYOUT GLOBAL (2 COLONNES)
+================================================== */
+
+.main-layout{
+
+    display:grid;
+
+    grid-template-columns:
+        650px
+        650px;
+
+    gap:80px;
+
+    align-items:start;
+
+}
+
+/* ==================================================
+   COLONNE GAUCHE
+================================================== */
+
+.left-side{
+    display:flex;
+    flex-direction:column;
+}
+
+/* ==================================================
+   PHOTO + BOUTONS
+================================================== */
+
+.top-left{
+
+    display:flex;
+
+    gap:60px;
+
+    align-items:flex-start;
+
+}
+
+/* ==================================================
+   PHOTO
+================================================== */
+
+.photo{
+
+    width:260px;
+    height:220px;
+
+    background:white;
+
+    border:5px solid var(--light-green);
+
+}
+
+.photo img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+/* ==================================================
+   BOUTONS
+================================================== */
+
+.links{
+
+    width:300px;
+
+    height:220px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+}
+
+.social-btn,
+.resume-btn{
+
+    height:65px;
+
+    display:flex;
+
+    justify-content:center; /* centre le groupe */
+
+    align-items:center;
+
+    border-radius:35px;
+
+    background:var(--green);
+
+    border:4px solid var(--light-green);
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    transition:0.2s;
+
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+
+}
+.social-btn:hover,
+.resume-btn:hover{
+    transform:scale(1.02);
+}
+
+.logo-placeholder{
+
+    width:40px;
+    min-width:40px;
+
+    height:40px;
+
+    background:white;
+
+    border-radius:5px;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    flex-shrink:0;
+    margin-left: 27%;
+}
+
+.btn-content{
+
+    width:240px;
+
+    display:grid;
+
+    grid-template-columns:60px 1fr;
+
+    align-items:center;
+
+    gap:15px;
+    
+
+}
+
+.btn-content span{
+    text-align:left;
+}
+
+.social-icon-telech{
+
+    width:35px;
+    height:32px;
+
+    object-fit:contain;
+    
+
+}
+
+.social-icon-git{
+
+    width:41px;
+    height:41px;
+
+    object-fit:contain;
+    
+
+}
+
+.social-icon-in{
+
+    width:30px;
+    height:30px;
+
+    object-fit:contain;
+    
+
+}
+
+/* ==================================================
+   NOM + DESCRIPTION
+================================================== */
+
+.presentation{
+
+    margin-top:35px;
+
+}
+
+.presentation h1{
+
+    font-size:56px;
+
+    font-weight:500;
+
+    margin-bottom:12px;
+
+    white-space:nowrap;
+
+}
+
+.bio{
+
+    font-size:24px;
+
+    line-height:1.7;
+
+    max-width:620px;
+
+    text-align:justify;
+
+
+}
+
+/* ==================================================
+   COLONNE DROITE
+================================================== */
+
+.right-side{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/* ==================================================
+   VIDEO
+================================================== */
+
+.video-box{
+
+    width:650px;
+
+    height:220px;
+
+    background:white;
+
+    border:4px dashed red;
+
+    color:red;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    font-size:24px;
+
+    font-weight:600;
+
+}
+
+.video-box iframe{
+
+    width:100%;
+    height:100%;
+
+    border:none;
+
+}
+
+/* ==================================================
+   ACADEMIC PATHWAY
+================================================== */
+
+.academic{
+
+    margin-top:35px;
+
+}
+
+.academic h2{
+
+    font-size:52px;
+
+    font-weight:500;
+
+    margin-bottom:15px;
+
+}
+
+.academic ul{
+
+    padding-left:30px;
+
+    font-size:24px;
+
+    line-height:1.8;
+
+}
+
+.academic li{
+
+    margin-bottom:12px;
+
+    font-size:24px;
+
+}
+
+/* ==================================================
+   VERSION MOBILE
+================================================== */
+
+@media(max-width:1400px){
+
+    .main-layout{
+
+        grid-template-columns:1fr;
+
+        gap:50px;
+
+    }
+
+    .video-box{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:900px){
+
+    .top-left{
+
+        flex-direction:column;
+
+        gap:25px;
+
+    }
+
+    .links{
+
+        width:100%;
+
+        height:auto;
+
+        gap:15px;
+
+    }
+
+    nav{
+
+        flex-wrap:wrap;
+
+    }
+
+    nav a{
+
+        min-width:50%;
+
+    }
+
+    .presentation h1{
+
+        font-size:40px;
+
+    }
+
+    .academic h2{
+
+        font-size:40px;
+
+    }
+
+    .bio{
+
+        font-size:24px;
+
+        line-height:1.7;
+
+          max-width:620px;
+
+         text-align:justify;
+
+}
+
+}
