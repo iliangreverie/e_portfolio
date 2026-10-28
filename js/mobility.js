@@ -85,7 +85,7 @@ const universities = [
     logo: "images/kyoto_logo.png",
     labImage: "images/kyoto_robot_photo.jpg",
 
-    title: "NISAR Laboratory",
+    title: "Robotics & Haptics Research",
 
     text:
     "Exchange semester at Kyoto University of Advanced Science (KUAS), Japan. Research activities within the NISAR Laboratory focused on medical and surgical robotics, haptics, human–robot interaction, and AI-powered robotic systems for healthcare applications.",
