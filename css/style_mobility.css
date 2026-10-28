@@ -191,7 +191,7 @@ nav a:hover{
 
     color:white;
 
-    font-size:72px;
+    font-size:55px;
     font-weight:700;
 
     text-transform:uppercase;
@@ -387,4 +387,120 @@ nav a:hover{
 .hero-image,
 .panel-image{
     transition: opacity 0.3s ease;
+}
+
+/* ==================================================
+   UNIVERSITY TITLE + URL
+================================================== */
+
+.hero-title{
+
+    position:static;
+
+    margin:0;
+
+    color:white;
+
+    font-size:55px;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    text-shadow:
+        0 0 8px rgba(0,0,0,0.7),
+        0 0 20px rgba(0,0,0,0.5);
+}
+
+#university-title{
+
+    display:block;
+}
+
+#university-url{
+
+    display:block;
+
+    margin-top:8px;
+
+    color:var(--light-green);
+
+    font-size:18px;
+
+    font-weight:300;
+
+    letter-spacing:1px;
+}
+
+#university-link{
+
+    text-decoration:none;
+}
+
+#university-link:hover #university-url{
+
+    color:var(--light-green);
+
+    text-decoration:underline;
+}
+
+/* ==================================================
+   LAB TITLE + URL
+================================================== */
+
+.lab-container{
+
+    margin-bottom:18px;
+}
+
+#lab-name-link{
+
+    display:block;
+
+    font-size:24px;
+
+    font-weight:500;
+
+    color:var(--green);
+
+    margin-bottom:4px;
+}
+
+#lab-url{
+
+    display:block;
+
+    color:rgba(63,101,34,0.45);
+
+    font-size:15px;
+
+    font-weight:300;
+
+    letter-spacing:.5px;
+}
+
+#lab-link{
+
+    text-decoration:none;
+
+    transition:.2s;
+}
+
+#lab-link:hover #lab-url{
+
+    color:rgba(63,101,34,0.85);
+
+    text-decoration:underline;
+}
+
+.hero-title-container{
+
+    position:absolute;
+
+    right:35px;
+    bottom:25px;
+
+    z-index:10;
+
+    text-align:right;
 }
