@@ -86,6 +86,48 @@ nav a:hover{
     object-fit:contain;
 }
 
+.language-menu{
+    position:relative;
+}
+
+.language-dropdown{
+    display:none;
+    position:absolute;
+    top:100%;
+    right:0;
+
+    min-width:180px;
+
+    background:white;
+    border:1px solid #4a7023;
+
+    z-index:1000;
+}
+
+.language-dropdown a{
+    display:block;
+    padding:15px 20px;
+    text-decoration:none;
+    color:#4a7023;
+    background:white;
+}
+
+.language-dropdown a:hover{
+    background:#4a7023;
+    color:white;
+    align-items:center;
+}
+
+.language-menu:hover .language-dropdown{
+    display:block;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+
+    
+    text-align:center;
+}
+
 /* ==================================================
    ACTIVITIES
 ================================================== */
@@ -161,7 +203,7 @@ main{
 
     background:rgba(140,198,63,.12);
 
-    border-left:4px solid var(--light-green);
+    
 
     color:var(--green);
 
@@ -193,10 +235,10 @@ main{
 
     background:white;
 
-    border-left:6px solid var(--light-green);
+    
 
     box-shadow:
-        0 4px 18px rgba(0,0,0,.05);
+        0 4px 18px rgba(0, 0, 0, 0.096);
 }
 
 .description p{

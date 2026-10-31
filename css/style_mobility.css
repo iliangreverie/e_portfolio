@@ -121,6 +121,47 @@ nav a:hover{
     
 }
 
+.language-menu{
+    position:relative;
+}
+
+.language-dropdown{
+    display:none;
+    position:absolute;
+    top:100%;
+    right:0;
+
+    min-width:180px;
+
+    background:white;
+    border:1px solid #4a7023;
+
+    z-index:1000;
+}
+
+.language-dropdown a{
+    display:block;
+    padding:15px 20px;
+    text-decoration:none;
+    color:#4a7023;
+    background:white;
+}
+
+.language-dropdown a:hover{
+    background:#4a7023;
+    color:white;
+}
+
+.language-menu:hover .language-dropdown{
+    display:block;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+
+    
+    text-align:center;
+}
+
 /* ==================================================
    INTERNATIONAL MOBILITY
 ================================================== */

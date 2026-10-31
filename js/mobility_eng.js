@@ -7,7 +7,7 @@ console.log("Mobility slider loaded");
 const universities = [
 
 {
-    name: "TOHOKU UNIVERSITY",
+    name: "UNIVERSITÉ DE TOHOKU",
 
     universityUrl:
     "https://www.eng.tohoku.ac.jp/english/",
@@ -21,23 +21,23 @@ const universities = [
     labDisplayUrl:
     "neuro.mech.tohoku.ac.jp",
 
-    banner: "images/tohoku_photo.jpg",
-    logo: "images/tohoku_logo.png",
-    labImage: "images/tohoku_robot_photo.jpg",
+    banner: "../images/tohoku_photo.jpg",
+    logo: "../images/tohoku_logo.png",
+    labImage: "../images/tohoku_robot_photo.jpg",
 
-    title: "Department of Robotics",
+    title: "Département de Robotique",
 
     text:
-    "Exchange semester at Tohoku University, Japan, within the Department of Robotics and the Graduate School of Biomedical Engineering. Research activities in the Neuro-Robotics Laboratory focused on neurorobotics, biosignal processing, artificial intelligence, and human–robot interaction for healthcare and rehabilitation applications.",
+    "Semestre d'échange à l'Université de Tohoku, au Japon, au sein du Département de Robotique et de l'École Supérieure de Génie Biomédical. Les activités de recherche menées au Neuro-Robotics Laboratory portent sur la neurorobotique, le traitement des biosignaux, l'intelligence artificielle et l'interaction humain-robot appliquées à la santé et à la rééducation.",
 
-    location: "Sendai, Japan",
+    location: "Sendai, Japon",
     laboratory: "Neuro-Robotics Laboratory",
-    field: "Biomedical Engineering",
-    period: "2nd or 3rd year"
+    field: "Génie biomédical",
+    period: "2e ou 3e année"
 },
 
 {
-    name: "KOBE UNIVERSITY",
+    name: "UNIVERSITÉ DE KOBE",
 
     universityUrl:
     "https://www.kobe-u.ac.jp/en/",
@@ -51,23 +51,23 @@ const universities = [
     labDisplayUrl:
     "research.kobe-u.ac.jp",
 
-    banner: "images/kobe_photo.jpg",
-    logo: "images/kobe_logo.png",
-    labImage: "images/kobe_robot_photo.jpg",
+    banner: "../images/kobe_photo.jpg",
+    logo: "../images/kobe_logo.png",
+    labImage: "../images/kobe_robot_photo.jpg",
 
-    title: "Medical Engineering Program",
+    title: "Programme d'Ingénierie Médicale",
 
     text:
-    "Exchange semester at Kobe University, Japan, within the Medical Engineering program. Academic activities focused on intelligent robotics, autonomous systems, medical robotics, and robotic technologies for healthcare applications, including systems related to robot-assisted surgery.",
+    "Semestre d'échange à l'Université de Kobe, au Japon, dans le cadre du programme d'Ingénierie Médicale. Les activités académiques sont orientées vers la robotique intelligente, les systèmes autonomes, la robotique médicale et les technologies robotiques pour la santé, notamment les systèmes liés à la chirurgie assistée par robot.",
 
-    location: "Kobe, Japan",
+    location: "Kobe, Japon",
     laboratory: "Function-Oriented Robotics Laboratory",
-    field: "Automation & Robotics",
-    period: "2nd or 3rd year"
+    field: "Automatique et robotique",
+    period: "2e ou 3e année"
 },
 
 {
-    name: "KYOTO UNIVERSITY OF ADVANCED SCIENCE",
+    name: "UNIVERSITÉ DES SCIENCES AVANCÉES DE KYOTO",
 
     universityUrl:
     "https://www.kuas.ac.jp/en/",
@@ -81,23 +81,22 @@ const universities = [
     labDisplayUrl:
     "nisarlab.org",
 
-    banner: "images/kyoto_photo.jpg",
-    logo: "images/kyoto_logo.png",
-    labImage: "images/kyoto_robot_photo.jpg",
+    banner: "../images/kyoto_photo.jpg",
+    logo: "../images/kyoto_logo.png",
+    labImage: "../images/kyoto_robot_photo.jpg",
 
-    title: "Robotics & Haptics Research",
+    title: "Recherche en Robotique et Haptique",
 
     text:
-    "Exchange semester at Kyoto University of Advanced Science (KUAS), Japan. Research activities within the NISAR Laboratory focused on medical and surgical robotics, haptics, human–robot interaction, and AI-powered robotic systems for healthcare applications.",
+    "Semestre d'échange à la Kyoto University of Advanced Science (KUAS), au Japon. Les activités de recherche menées au sein du laboratoire NISAR portent sur la robotique médicale et chirurgicale, l'haptique, l'interaction humain-robot ainsi que les systèmes robotiques intégrant l'intelligence artificielle pour les applications de santé.",
 
-    location: "Kyoto, Japan",
-    laboratory: "NISAR Laboratory",
-    field: "Artificial Intelligence & Robotics",
-    period: "2nd or 3rd year"
+    location: "Kyoto, Japon",
+    laboratory: "Laboratoire NISAR",
+    field: "Intelligence artificielle et robotique",
+    period: "2e ou 3e année"
 }
 
 ];
-
 /* ==========================
    HTML ELEMENTS
 ========================== */
